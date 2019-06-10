@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css?family=Kalam&display=swap');
+
+:root {
+    --backgroundColor: #F76C6C;
+    --fontColor: #f5eeee;
+    --messageColor: #374785;
+}
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Kalam', cursive;
+    color: var(--fontColor);
+}
+
+#content {
+    display: grid;
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
+    grid-template-rows: 10vh 70vh 10vh 10vh;
+    grid-template-columns: 10vw 80vw 10vw;
+    background-color: var(--backgroundColor);
+}
+
+.title {
+    grid-column-start: 2;
+    grid-row-start: 1;
+    text-align: center;
+    padding-top: 20px;
+}
+
+#message {
+    grid-column-start: 2;
+    grid-row-start: 2;
+    font-size: 30px;
+    resize: none;
+    background-color: var(--messageColor);
+    border: none;
+}
+
+.talk {
+    grid-column-start: 2;
+    grid-row-start: 3;
+    font-size: 40px;
+    background-color: var(--messageColor);
+    border: none;
+}
+.talk:hover {
+    cursor: pointer;
+}
